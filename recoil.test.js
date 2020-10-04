@@ -8,9 +8,9 @@ describe("first test", () => {
 		browser = await puppeteer.launch({ headless: true });
 		page = await browser.newPage();
 	});
-// 	afterEach(async () => {
-// 		//  await browser.close();
-// 	});
+	afterAll(async () => {
+		 await browser.close();
+	});
 
 	test("Can add background color functionality with normal state ", async () => {
 		//go to local host
