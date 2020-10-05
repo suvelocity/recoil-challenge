@@ -2,7 +2,7 @@ const puppeteer = require("puppeteer");
 
 let page;
 let browser;
-jest.setTimeout(30000);
+jest.setTimeout(8000);
 describe("Can add background color functionality", () => {
 	beforeAll(async () => {
 		//open a chromium browser
