@@ -39,7 +39,6 @@ describe("Can add background color functionality", () => {
 			await page.keyboard.press("ArrowUp");
 		}
 		const color = await page.$eval("#colorPickerInput", e => e.value);
-		const color = await page.$eval("#colorPickerInput", e => e.value);
 
 		// get canvas background color after the change
 		const canvasColorAfter = await page.$eval(".canvas", e => {
@@ -72,7 +71,6 @@ describe("Can add background color functionality", () => {
 		for (let i = 0; i < arrowUp; i++) {
 			await page.keyboard.press("ArrowUp");
 		}
-		const color = await page.$eval("#colorPickerInput", e => e.value);
 		const color = await page.$eval("#colorPickerInput", e => e.value);
 
 		// get canvas background color after the change
