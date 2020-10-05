@@ -34,6 +34,11 @@ describe("Can add background color functionality", () => {
 		for (let i = 0; i < arrowRight; i++) {
 			await page.keyboard.press("ArrowRight");
 		}
+		const arrowUp = Math.floor(Math.random() * 15) + 5;
+		for (let i = 0; i < arrowUp; i++) {
+			await page.keyboard.press("ArrowUp");
+		}
+		const color = await page.$eval("#colorPickerInput", e => e.value);
 		const color = await page.$eval("#colorPickerInput", e => e.value);
 
 		// get canvas background color after the change
@@ -63,6 +68,11 @@ describe("Can add background color functionality", () => {
 		for (let i = 0; i < arrowRight; i++) {
 			await page.keyboard.press("ArrowRight");
 		}
+		const arrowUp = Math.floor(Math.random() * 15) + 5;
+		for (let i = 0; i < arrowUp; i++) {
+			await page.keyboard.press("ArrowUp");
+		}
+		const color = await page.$eval("#colorPickerInput", e => e.value);
 		const color = await page.$eval("#colorPickerInput", e => e.value);
 
 		// get canvas background color after the change
