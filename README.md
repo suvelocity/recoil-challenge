@@ -6,8 +6,9 @@ So before we dive in we would like you to see a few things:
 1. Cover the [Basics](https://www.youtube.com/watch?v=_ISAA_Jt9kI&feature=emb_title&ab_channel=ReactEurope)
 2. Understanding [Core concepts](https://recoiljs.org/docs/introduction/core-concepts)
 3. Practice makes perfect! Do the [To-do List](https://recoiljs.org/docs/basic-tutorial/intro) mini project to get used to the syntax.
-
-**Please do not change the boiler templates id's and class names.**
+4  Check out the flow chart at the bottom of this file. 
+**Don't Change the Component tree**
+**Please do not change id's and class names.**
 
 ## Tips
 
@@ -33,7 +34,7 @@ At the start of the app you will see a render meter that counts the number of re
 
 ## Task 1: Fix the ColorPicker component!
 
-so after reading the docs and practicing the 'TODO-LIST' we can start out first task.
+so after reading the docs and practicing the 'TODO-LIST' and knowing aour way around the app's structure (flow chart at the end of this file) we can start out first task.
 
 at the current situation you are given with an App can pick a color but nothing happens. we will need to fix the functionality (without recoil) so the selected color will be the canvas background color!
 
@@ -119,7 +120,7 @@ Change the edit handling function in SideBarItem so it sets rectAtom in the same
 
 ## Tests:
 
-- Task 1,2 _npm run first_
+- Task 1,2 _npm run colorPicker_
 - Task 3 _npm run addRect_
 - Task 4,5 _npm run changeRect_
 
