@@ -6,7 +6,7 @@ jest.setTimeout(30000);
 describe("Can add background color functionality", () => {
 	beforeAll(async () => {
 		//open a chromium browser
-		browser = await puppeteer.launch({ headless: false });
+		browser = await puppeteer.launch({ headless: true });
 		//open a new page within that browser
 		page = await browser.newPage();
 		//go to our app
@@ -93,7 +93,7 @@ function rgbToHex(rgb) {
 describe("Can Add a shape from Menu", () => {
 	beforeAll(async () => {
 		//open a chromium browser
-		browser = await puppeteer.launch({ headless: false });
+		browser = await puppeteer.launch({ headless: true });
 		//open a new page within that browser
 		page = await browser.newPage();
 		await page.goto("http://localhost:3000/", { waitUntil: "networkidle0" });
@@ -158,7 +158,7 @@ describe("Can Add a shape from Menu", () => {
 describe("Edit rectangle", () => {
 	beforeEach(async () => {
 		//open a chromium browser
-		browser = await puppeteer.launch({ headless: false, slowMo: 500 });
+		browser = await puppeteer.launch({ headless: true });
 		//open a new page within that browser
 		page = await browser.newPage();
 		await page.goto("http://localhost:3000/", { waitUntil: "networkidle0" });
