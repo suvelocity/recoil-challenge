@@ -24,6 +24,11 @@ That way you will be really exposed to the advantages of that technology.
 
 for your own understanding, DO NOT complete each task directrly with recoil, Go with the Given workFlow, it was thought through and its the optimal way to grasp the concept.
 
+First we will introduce the render meter that will count the number of renders for each of our 4 main components (App, Canvas, SideBar, SideBarList). As you saw in the links above using the recoil let's us make changes to different unrelated components without having to render the main App component or any other component.
+At the start of the app you will see a render meter that counts the number of renders each component had, you will see that each component rendered once at the start of the app.
+
+![render image](./render-meter.png)
+
 # Lets Jump ahead!
 
 ## Task 1: Fix the ColorPicker component!
@@ -117,3 +122,7 @@ Change the edit handling function in SideBarItem so it sets rectAtom in the same
 - Task 1,2 _npm run first_
 - Task 3 _npm run addRect_
 - Task 4,5 _npm run changeRect_
+
+## Bonus: try taking a look at the render meter mechanism and implement it yourself!
+
+![App flow-chart](./Flow-chart.jpeg)
