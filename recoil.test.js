@@ -91,7 +91,7 @@ function rgbToHex(rgb) {
 }
 
 describe("Can Add a shape from Menu", () => {
-	beforeEach(async () => {
+	beforeAll(async () => {
 		//open a chromium browser
 		browser = await puppeteer.launch({ headless: true });
 		//open a new page within that browser
@@ -189,7 +189,7 @@ describe("Can Add a shape from Menu", () => {
 });
 
 describe("Edit rectangle", () => {
-	beforeEach(async () => {
+	beforeAll(async () => {
 		//open a chromium browser
 		browser = await puppeteer.launch({ headless: true });
 		//open a new page within that browser
